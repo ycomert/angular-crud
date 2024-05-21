@@ -42,7 +42,7 @@ export class CategoryFormComponent implements OnInit {
       const category: Category = this.categoryForm.value;
       if (this.categoryId) {
         this.categoryService.updateCategory(this.categoryId, category).subscribe(() => {
-          this.router.navigate(['/categories']);
+          this.router.navigate(['']);
         });
       }
     }
