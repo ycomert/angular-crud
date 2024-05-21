@@ -9,49 +9,20 @@
       "name": "Kırtasiye",
       "description": "Kitaplar bur",
       "id": "2"
-    },
-    {
-      "id": "6255",
-      "name": "1",
-      "description": "1"
     }
   ],
   "products": [
     {
-      "name": "Laptop",
-      "description": "A personal computer",
-      "price": 999.99,
-      "id": "1"
+      "id": "94b2",
+      "name": "wew",
+      "description": "asdasd",
+      "price": 34324
     },
     {
-      "name": "Laptop 2",
-      "description": "A personaldfdfcomputer2",
-      "price": 999.99,
-      "id": "2"
-    },
-    {
-      "name": "Laptop 3",
-      "description": "A personal computer",
-      "price": 999.99,
-      "id": "3"
-    },
-    {
-      "id": "347d",
-      "name": "wwe",
-      "description": "2132",
-      "price": 111
-    },
-    {
-      "id": "1742",
-      "name": "23423",
-      "description": "dasdsa",
-      "price": 223232
-    },
-    {
-      "id": "55bf",
-      "name": "fsdfdsf",
-      "description": "32432",
-      "price": 3424
+      "id": "31e8",
+      "name": "adsasd",
+      "description": "asdasd",
+      "price": 324
     }
   ]
 }

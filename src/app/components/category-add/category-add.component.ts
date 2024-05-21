@@ -17,7 +17,10 @@ import { Router, RouterLink } from '@angular/router';
 export class CategoryAddComponent {
   categoryForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private categoryService: CategoryService, private router: Router,) {
+  constructor(private fb: FormBuilder,
+    private categoryService: CategoryService,
+    private router: Router
+  ) {
     this.categoryForm = this.fb.group({
       name: ['', Validators.required],
       description: ['', Validators.required]

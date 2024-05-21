@@ -41,7 +41,5 @@ export class ProductAddComponent {
       });
     }
   }
-
-
 }
 

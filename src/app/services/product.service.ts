@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class ProductService {
   private apiUrl = 'http://localhost:3000/products';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(this.apiUrl);
@@ -31,7 +31,6 @@ export class ProductService {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }
-
 
 
 export interface Product {
