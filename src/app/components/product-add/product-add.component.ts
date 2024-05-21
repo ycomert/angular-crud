@@ -34,10 +34,14 @@ export class ProductAddComponent {
       const productData = this.productForm.value;
       this.productService.addProduct(productData).subscribe(() => {
         console.log('Product added successfully');
-        this.router.navigate(['/productlist']);
+        // Geçici bir route'a gidip tekrar geri dön
+        this.router.navigate(['/products'], { skipLocationChange: true }).then(() => {
+          this.router.navigate(['']);
+        });
       });
     }
   }
-}
 
+
+}
 

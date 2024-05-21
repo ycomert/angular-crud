@@ -14,11 +14,6 @@
       "id": "6255",
       "name": "1",
       "description": "1"
-    },
-    {
-      "name": "rfsdfsdf",
-      "description": "31123",
-      "id": "793d"
     }
   ],
   "products": [
@@ -39,6 +34,24 @@
       "description": "A personal computer",
       "price": 999.99,
       "id": "3"
+    },
+    {
+      "id": "347d",
+      "name": "wwe",
+      "description": "2132",
+      "price": 111
+    },
+    {
+      "id": "1742",
+      "name": "23423",
+      "description": "dasdsa",
+      "price": 223232
+    },
+    {
+      "id": "55bf",
+      "name": "fsdfdsf",
+      "description": "32432",
+      "price": 3424
     }
   ]
 }

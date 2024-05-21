@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CategoryService, Category } from '../../services/category.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-category-add',
@@ -10,13 +10,14 @@ import { Router } from '@angular/router';
   styleUrl: './category-add.component.scss',
   standalone: true,
   imports: [
-    ReactiveFormsModule
+    RouterLink,
+    ReactiveFormsModule,
   ]
 })
 export class CategoryAddComponent {
   categoryForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private categoryService: CategoryService) {
+  constructor(private fb: FormBuilder, private categoryService: CategoryService, private router: Router,) {
     this.categoryForm = this.fb.group({
       name: ['', Validators.required],
       description: ['', Validators.required]
@@ -28,8 +29,12 @@ export class CategoryAddComponent {
       const category: Category = this.categoryForm.value;
       this.categoryService.addCategory(category).subscribe(() => {
         console.log('Category added successfully');
-        this.categoryForm.reset();
+        // Geçici bir route'a gidip tekrar geri dön
+        this.router.navigateByUrl('/categories', { skipLocationChange: true }).then(() => {
+          this.router.navigate(['']); // 'add-category' route'u sizin form component'inizin route'u olmalı.
+        });
       });
     }
   }
 }
+
