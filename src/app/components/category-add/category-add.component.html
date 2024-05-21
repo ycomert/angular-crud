@@ -1,0 +1,15 @@
+<!-- src/app/components/category-add/category-add.component.html -->
+<h2>Kategori Ekleme</h2>
+<form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+  <div class="py-2">
+    <label class="form-label" for="name">Name</label>
+    <br>
+    <input placeholder="Kategori Adını Giriniz" id="name" formControlName="name">
+  </div>
+  <div>
+    <label for="description">Açıklama</label>
+    <br>
+    <input placeholder="Açıklamasını  Giriniz" id="description" formControlName="description">
+  </div>
+  <button class="my-2 btn btn-success" type="submit">Kategori Ekle</button>
+</form>

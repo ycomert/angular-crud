@@ -1,0 +1,29 @@
+<!-- src/app/components/product-form/product-form.component.html -->
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 border border-danger p-3">
+      <h3>Ürün Güncelleme Sayfası</h3>
+      <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="name">Name</label>
+          <br>
+          <input id="name" formControlName="name">
+        </div>
+        <div>
+          <label for="description">Description</label>
+          <br>
+          <input id="description" formControlName="description">
+        </div>
+        <div>
+          <label for="price">Price</label>
+          <br>
+          <input id="price" formControlName="price" type="number">
+        </div>
+        <button class="mt-3 btn btn-success" type="submit">Kaydet</button>
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

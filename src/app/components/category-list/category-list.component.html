@@ -1,0 +1,26 @@
+<!-- src/app/components/category-list/category-list.component.html -->
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <h2 class="text-center">Category List</h2>
+      <table class="table">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Açıklama</th>
+          <th>Actions</th>
+        </tr>
+        <tr *ngFor="let category of categories">
+          <td>{{ category.id }}</td>
+          <td>{{ category.name }}</td>
+          <td>{{ category.description }}</td>
+          <td>
+            <button class="btn btn-primary mx-2 px-3" (click)="editCategory(category.id)">Güncelle</button>
+            <button class="btn btn-danger mx-2 px-3" (click)="deleteCategory(category.id)">Sil</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-4"><app-category-add></app-category-add></div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "name": "Electronik",
+      "description": "Electronik cihazlar",
+      "id": "1"
+    },
+    {
+      "name": "Kırtasiye",
+      "description": "Kitaplar burada",
+      "id": "2"
+    },
+    {
+      "id": "6255",
+      "name": "1",
+      "description": "1"
+    },
+    {
+      "name": "rfsdfsdf",
+      "description": "31123",
+      "id": "793d"
+    }
+  ],
+  "products": [
+    {
+      "name": "Laptop",
+      "description": "A personal computer",
+      "price": 999.99,
+      "id": "1"
+    },
+    {
+      "name": "Laptop 2",
+      "description": "A personaldfdfcomputer2",
+      "price": 999.99,
+      "id": "2"
+    },
+    {
+      "name": "Laptop 3",
+      "description": "A personal computer",
+      "price": 999.99,
+      "id": "3"
+    }
+  ]
+}

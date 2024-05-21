@@ -1,0 +1,19 @@
+<!-- src/app/components/product-add/product-add.component.html -->
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Name</label>
+    <br>
+    <input placeholder="Ürün Adı Giriniz" id="name" formControlName="name" type="text">
+  </div>
+  <div class="my-2">
+    <label for="description">Açıklama</label>
+    <br>
+    <textarea placeholder="Ürün Açıklaması Giriniz" id="description" formControlName="description"></textarea>
+  </div>
+  <div>
+    <label for="price">Price</label>
+    <br>
+    <input placeholder="Ürün Fiyatı Giriniz" id="price" formControlName="price" type="number">
+  </div>
+  <button class="my-2 btn btn-success" type="submit">Ürün Ekle</button>
+</form>
