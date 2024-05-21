@@ -13,16 +13,16 @@
   ],
   "products": [
     {
-      "id": "94b2",
-      "name": "wew",
-      "description": "asdasd",
-      "price": 34324
+      "name": "Ürün 1",
+      "description": "Acıklama 1",
+      "price": 111,
+      "id": "1"
     },
     {
-      "id": "31e8",
-      "name": "adsasd",
-      "description": "asdasd",
-      "price": 324
+      "name": "Ürün 2",
+      "description": "Açıklama 2",
+      "price": 222,
+      "id": "2"
     }
   ]
 }
